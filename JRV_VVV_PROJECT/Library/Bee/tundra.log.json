@@ -1,6 +1,7 @@
 {"msg":"init","dagFile":"Library/Bee/200b0aE.dag","targets":["ScriptAssemblies"]}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"ScriptAssemblies","enqueuedNodeIndex":5}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_0A2E89515E869930.mvfrm","enqueuedNodeIndex":4,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_70CB2D170B7E8CFE.mvfrm","enqueuedNodeIndex":6,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.DeviceSimulatorModule.dll_3442D3D2A5460323.mvfrm","enqueuedNodeIndex":7,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
@@ -1540,6 +1541,8 @@
 {"msg":"newNode","annotation":"ScriptAssemblies","index":5}
 {"msg":"runNodeAction","annotation":"ScriptAssemblies","index":5}
 =======
+=======
+>>>>>>> Stashed changes
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.WebGL.Extensions.dll_DFF78AC95C1C9A56.mvfrm","enqueuedNodeIndex":4,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.Graphs.dll_0A2E89515E869930.mvfrm","enqueuedNodeIndex":6,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"MovedFromExtractor Library/Bee/artifacts/mvdfrm/UnityEditor.CoreModule.dll_70CB2D170B7E8CFE.mvfrm","enqueuedNodeIndex":7,"enqueueingNodeAnnotation":"ScriptAssemblies","enqueueingNodeIndex":5}

@@ -119,6 +119,10 @@
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 <<<<<<< Updated upstream:JRV_VVV_PROJECT/Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.rsp
+<<<<<<< Updated upstream:JRV_VVV_PROJECT/Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.rsp
+=======
+-r:"/Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
+>>>>>>> Stashed changes:JRV_VVV_PROJECT/Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp
 =======
 -r:"/Applications/Unity/Hub/Editor/2021.3.15f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
 >>>>>>> Stashed changes:JRV_VVV_PROJECT/Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp
@@ -333,9 +337,15 @@
 -r:"/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
 <<<<<<< Updated upstream:JRV_VVV_PROJECT/Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.rsp
+<<<<<<< Updated upstream:JRV_VVV_PROJECT/Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.rsp
 -r:"/Users/vascos/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
 -r:"/Users/vascos/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/unityplastic.dll"
 -r:"/Users/vascos/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+=======
+-r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
+-r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/unityplastic.dll"
+-r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+>>>>>>> Stashed changes:JRV_VVV_PROJECT/Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.rsp
 =======
 -r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll"
 -r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.collab-proxy@1.17.7/Lib/Editor/PlasticSCM/unityplastic.dll"
