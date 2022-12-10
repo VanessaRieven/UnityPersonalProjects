@@ -5,18 +5,24 @@ using UnityEngine;
 public class BoxTrigger : MonoBehaviour
 {
     public Renderer rend;
+    GameObject player1;
+    public bool player1Entered = false;
+    GameObject player2;
+    public bool player2Entered = false;
 
     private void Start()
     {
         rend = GetComponent<Renderer>();
+        player1 = GameObject.FindGameObjectWithTag("Player");
+        player1 = GameObject.FindGameObjectWithTag("Player2");
     }
 
     private void OnTriggerEnter(Collider obj)
     {
         if(obj.tag == "Player"){
-            rend.material.color = Color.red;
+            player1Entered = true;
         }else if(obj.tag == "Player2"){
-            rend.material.color = Color.blue;
+            player2Entered = true;
         }
     }
 }

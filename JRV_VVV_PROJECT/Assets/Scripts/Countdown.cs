@@ -18,7 +18,6 @@ public class Countdown : MonoBehaviour
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
-        print(currentTime);
     }
 }
 

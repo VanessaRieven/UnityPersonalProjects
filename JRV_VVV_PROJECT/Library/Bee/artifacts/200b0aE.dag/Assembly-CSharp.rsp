@@ -109,13 +109,6 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
--define:UNITY_PRO_LICENSE
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -331,18 +324,14 @@
 -r:"/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"/Applications/Unity/Hub/Editor/2021.3.15f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
--r:"/Users/vascos/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
--r:"/Users/vascos/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
-=======
 -r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
->>>>>>> Stashed changes
-=======
--r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
--r:"/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
->>>>>>> Stashed changes
+-r:"Library/Bee/artifacts/200b0aE.dag/CFXR.WelcomeScreen.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/CFXRDemo.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/CFXREditor.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/CFXRRuntime.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/KinoBloom.Runtime.ref.dll"
+-r:"Library/Bee/artifacts/200b0aE.dag/ToonyColorsPro.Demo.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Services.Core.Analytics.ref.dll"
@@ -364,6 +353,16 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_AutoStopLoopedEffect.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_Demo_New.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_Demo_RandomDir.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_Demo_RandomDirectionTranslate.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_Demo_RotateCamera.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Demo/Assets/CFX_Demo_Translate.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_AutoDestructShuriken.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_AutoRotate.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightFlicker.cs"
+"Assets/JMO Assets/Cartoon FX (legacy)/Scripts/CFX_LightIntensityFade.cs"
 "Assets/Kawaii Slimes/Cameras/Scripts/AbstractTargetFollower.cs"
 "Assets/Kawaii Slimes/Cameras/Scripts/FreeLookCam.cs"
 "Assets/Kawaii Slimes/Cameras/Scripts/PivotBasedCameraRig.cs"
@@ -371,6 +370,7 @@
 "Assets/Kawaii Slimes/Scripts/AI/Face.cs"
 "Assets/Kawaii Slimes/Scripts/GameManager.cs"
 "Assets/Scripts/BoxTrigger.cs"
+"Assets/Scripts/Countdown.cs"
 "Assets/Scripts/LightFlicker.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/PlayerMovement2.cs"

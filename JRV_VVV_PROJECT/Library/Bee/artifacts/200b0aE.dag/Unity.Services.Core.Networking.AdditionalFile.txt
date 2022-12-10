@@ -1,9 +1,1 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-/Users/vascos/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT
-=======
 /Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT
->>>>>>> Stashed changes
-=======
-/Users/vanessabrioso/Documents/GitHub/UnityPersonalProjects/JRV_VVV_PROJECT
->>>>>>> Stashed changes
