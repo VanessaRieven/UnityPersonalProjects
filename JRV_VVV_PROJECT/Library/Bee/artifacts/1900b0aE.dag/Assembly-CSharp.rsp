@@ -380,6 +380,8 @@
 "Assets/Viorel/Character select/Character.cs"
 "Assets/Viorel/Character select/CharacterDataBase.cs"
 "Assets/Viorel/Character select/CharacterManager.cs"
+"Assets/Viorel/Character select/DataBase 3D/CharManager3D.cs"
+"Assets/Viorel/Character select/DataBase 3D/DataBase3D.cs"
 "Assets/Viorel/Character select/Player.cs"
 -langversion:9.0
 
