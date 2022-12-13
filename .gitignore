@@ -1,0 +1,3 @@
+# ignore ALL files in ANY directory named temp and library
+Temp/
+Library/
