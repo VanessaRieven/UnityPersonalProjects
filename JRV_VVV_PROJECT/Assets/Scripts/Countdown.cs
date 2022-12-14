@@ -1,23 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Countdown : MonoBehaviour
 {
+    public float TimeLeft;
+    public bool TimerOn = false;
 
-    float currentTime = 0f;
-    float startingTime = 10f;
-
-    // Start is called before the first frame update
+    public Text TimerTxt;
+   
     void Start()
     {
-        currentTime = startingTime;
+        TimerOn = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        currentTime -= 1 * Time.deltaTime;
+        if(TimerOn)
+        {
+            if(TimeLeft > 0)
+            {
+                TimeLeft -= Time.deltaTime;
+                updateTimer(TimeLeft);
+            }
+            else
+            {
+                Debug.Log("Time is UP!");
+                TimeLeft = 0;
+                TimerOn = false;
+            }
+        }
+    }
+
+    void updateTimer(float currentTime)
+    {
+        currentTime += 1;
+
+        float minutes = Mathf.FloorToInt(currentTime / 60);
+        float seconds = Mathf.FloorToInt(currentTime % 60);
+
+        TimerTxt.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 }
 
