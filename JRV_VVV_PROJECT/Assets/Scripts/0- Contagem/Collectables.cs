@@ -16,7 +16,7 @@ public class Collectables : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Collectable"){
-            pointBoardScript.points += 300;
+            //pointBoardScript.points += 300;
             pointBoardScript.pointsText.text = pointBoardScript.points.ToString();
             Destroy(other.gameObject);
         }

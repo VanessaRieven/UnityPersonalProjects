@@ -27,15 +27,22 @@ public class ColectColor : MonoBehaviour
 
     public void ChangeColor(){
         box = this.gameObject;
-        if(p1Entered) box.GetComponent<Renderer>().material.color = player1Color; else box.GetComponent<Renderer>().material.color = player2Color;
+        if(p1Entered)
+        {
+            box.GetComponent<Renderer>().material.color = player1Color;
+        }
+        else
+        {
+            box.GetComponent<Renderer>().material.color = player2Color;
+        }
         particles.Play();
         addBoxPoints();
     }
 
     //acrescenta 100 pontos 
     public void addBoxPoints(){
-        pointBoardScript.points = pointBoardScript.points + 100;
-        pointBoardScript.pointsText.text = pointBoardScript.points.ToString();
+        pointBoardScript.points = pointBoardScript.points + 10;
+        //pointBoardScript.pointsText.text = pointBoardScript.points.ToString();
     }
 
     void OnTriggerEnter(Collider other){
