@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//script muda material do chao on collision
 public class BoxTrigger : MonoBehaviour
 {
     public Renderer rend;

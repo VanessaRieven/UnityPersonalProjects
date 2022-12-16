@@ -1,4 +1,2 @@
-# ignore ALL files in ANY directory named temp and library
-JRV_VVV_PROJECT/Temp/
-JRV_VVV_PROJECT/Library/
-JRV_VVV_PROJECT/Logs/
+Library
+Logs
