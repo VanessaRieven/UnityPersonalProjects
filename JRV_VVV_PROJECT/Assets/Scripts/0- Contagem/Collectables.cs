@@ -9,9 +9,10 @@ public class Collectables : MonoBehaviour
 
     private void Start()
     {
-        pointBoardScript = GameObject.Find("Texto Pontuação").GetComponent<PointBoard>();
+        pointBoardScript = GameObject.Find("Texto Pontuação").GetComponent<PointBoard>(); //vai buscar o script pointBoard a pasta
     }
 
+//script soma 300 pontos ao colidir com o Collectable (diamond)
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Collectable"){

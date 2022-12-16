@@ -12,30 +12,30 @@ public class Countdown : MonoBehaviour
    
     void Start()
     {
-        TimerOn = true;
+        TimerOn = true; //Arranca timer com o jogo
     }
 
     void Update()
     {
-        if(TimerOn)
+        if(TimerOn) //se o contador for true, entra
         {
-            if(TimeLeft > 0)
+            if(TimeLeft > 0) //condicao que faz update ao tempo, reduzindo um segundo de cada vez
             {
                 TimeLeft -= Time.deltaTime;
-                updateTimer(TimeLeft);
+                updateTimer(TimeLeft); //funcao de update do timer, envia um parametro a funcao (time left)
             }
             else
             {
                 Debug.Log("Time is UP!");
-                TimeLeft = 0;
+                TimeLeft = 0; //quando chegar a 0, ele entra aqui inves do if, passa o timerOn a falso e termina
                 TimerOn = false;
             }
         }
     }
 
-    void updateTimer(float currentTime)
+    void updateTimer(float currentTime) //funcao de update do valor do timer
     {
-        currentTime += 1;
+        currentTime += 1; 
 
         float minutes = Mathf.FloorToInt(currentTime / 60);
         float seconds = Mathf.FloorToInt(currentTime % 60);

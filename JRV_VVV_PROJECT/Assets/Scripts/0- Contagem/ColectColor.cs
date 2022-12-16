@@ -17,6 +17,7 @@ public class ColectColor : MonoBehaviour
     public Color player2Color = new Color(4.7f, 4.5f, 4.75f, 1f);
     public ParticleSystem particles;
 
+    //Vai buscar as cores do player, cada vez q o player colidir com a caixa, valida se ja tinha entrado ou nao e altera a cor. 
     void Start()
     {
         playerMovementScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
@@ -31,6 +32,7 @@ public class ColectColor : MonoBehaviour
         addBoxPoints();
     }
 
+    //acrescenta 100 pontos 
     public void addBoxPoints(){
         pointBoardScript.points = pointBoardScript.points + 100;
         pointBoardScript.pointsText.text = pointBoardScript.points.ToString();

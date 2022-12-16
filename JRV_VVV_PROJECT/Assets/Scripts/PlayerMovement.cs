@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        colectColorScript = GameObject.FindGameObjectWithTag("Floor").GetComponent<ColectColor>();
+        colectColorScript = GameObject.FindGameObjectWithTag("Floor").GetComponent<ColectColor>(); //vai buscar o collectColor script a pasta
     }
 
     void Update()
