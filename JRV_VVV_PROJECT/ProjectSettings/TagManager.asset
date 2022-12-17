@@ -8,6 +8,7 @@ TagManager:
   - FxTemporaire
   - Collectable
   - Floor
+  - Collectable2
   layers:
   - Default
   - TransparentFX

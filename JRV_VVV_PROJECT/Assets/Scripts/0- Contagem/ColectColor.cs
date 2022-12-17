@@ -23,6 +23,7 @@ public class ColectColor : MonoBehaviour
         playerMovementScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
         collectablesScript = GameObject.Find("PointsText").GetComponent<Collectables>();
         pointBoardScript = GameObject.Find("Texto Pontuação").GetComponent<PointBoard>();
+        pointBoardScript.points = -10;
     }
 
     public void ChangeColor(){
