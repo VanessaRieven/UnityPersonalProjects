@@ -32,7 +32,7 @@ public class ColectColor : MonoBehaviour
         {
             box.GetComponent<Renderer>().material.color = player1Color;
         }
-        else
+        else if(p2Entered)
         {
             box.GetComponent<Renderer>().material.color = player2Color;
         }
@@ -47,12 +47,15 @@ public class ColectColor : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other){
-        if(other.gameObject.tag == "Player" && !boxColored){
+        if(other.gameObject.tag == "Player"){ // && !boxColored){
+            p2Entered = false;
             p1Entered = true;
-            boxColored = true;
+            //boxColored = true;
             ChangeColor();
-        } else if(this.gameObject.tag == "Player2" && !boxColored){
+        } else if(other.gameObject.tag == "Player2"){ // && !boxColored){
+            p1Entered = false;
             p2Entered = true;
+            //boxColored = true;
             ChangeColor();
         }   
     }
