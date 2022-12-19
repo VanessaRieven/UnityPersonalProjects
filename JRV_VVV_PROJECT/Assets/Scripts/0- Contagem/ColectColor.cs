@@ -7,6 +7,7 @@ using UnityEngine;
 public class ColectColor : MonoBehaviour
 {
     PlayerMovement playerMovementScript;
+    PlayerMovement2 playerMovementScript2;
     Collectables collectablesScript;
     PointBoard pointBoardScript;
     public bool boxColored = false;
@@ -21,6 +22,7 @@ public class ColectColor : MonoBehaviour
     void Start()
     {
         playerMovementScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
+        playerMovementScript2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<PlayerMovement2>();
         collectablesScript = GameObject.Find("PointsText").GetComponent<Collectables>();
         pointBoardScript = GameObject.Find("Texto Pontuação").GetComponent<PointBoard>();
         pointBoardScript.p1_Points = -10;
@@ -45,11 +47,11 @@ public class ColectColor : MonoBehaviour
     public void addBoxPoints(){
         if(p1Entered) {
             pointBoardScript.p1_Points = pointBoardScript.p1_Points + 10; 
-            pointBoardScript.p1_pointsText.text = pointBoardScript.p1_Points.ToString();
+            //pointBoardScript.p1_pointsText.text = pointBoardScript.p1_Points.ToString();
         }
         else if(p2Entered) {
             pointBoardScript.p2_Points = pointBoardScript.p2_Points + 10;
-            pointBoardScript.p2_pointsText.text = pointBoardScript.p2_Points.ToString();
+            //pointBoardScript.p2_pointsText.text = pointBoardScript.p2_Points.ToString();
         }
         //pointBoardScript.pointsText.text = pointBoardScript.points.ToString();
         

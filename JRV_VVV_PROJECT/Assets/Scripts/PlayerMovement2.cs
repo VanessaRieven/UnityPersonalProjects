@@ -24,7 +24,7 @@ public class PlayerMovement2 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            if (transform.position.x > -4)
+            if (transform.position.x > -5)
             {
                 Input.GetKey(KeyCode.LeftArrow);
                 Debug.Log("Entrou 2");
