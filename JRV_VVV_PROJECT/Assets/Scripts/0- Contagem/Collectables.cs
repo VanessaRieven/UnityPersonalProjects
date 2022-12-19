@@ -23,7 +23,8 @@ public class Collectables : MonoBehaviour
     {
         if(other.tag == "Collectable"){
             //pointBoardScript.points += 300;
-            pointBoardScript.pointsText.text = pointBoardScript.points.ToString();
+            pointBoardScript.p1_pointsText.text = pointBoardScript.p1_Points.ToString();
+            pointBoardScript.p2_pointsText.text = pointBoardScript.p2_Points.ToString();
             Destroy(other.gameObject);
             Debug.Log(other.tag);
 

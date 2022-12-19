@@ -10,15 +10,14 @@ Material:
   m_Name: gem - cyan
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
-  - _ALPHAPREMULTIPLY_ON
   - _EMISSION
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - OUTLINE_FRONT
   m_LightmapFlags: 1
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3000
-  stringTagMap:
-    RenderType: Transparent
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -28,6 +27,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Detail:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -47,6 +50,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EmissiveMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FalloffSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 02d9883fe6ce23545a43a82f7d496a2b, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -63,6 +74,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Ramp:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _ReflectTex:
         m_Texture: {fileID: 8900000, guid: 25793ebbbd111a7011005aba44295342, type: 2}
         m_Scale: {x: 1, y: 1}
@@ -71,32 +86,56 @@ Material:
         m_Texture: {fileID: 8900000, guid: c6d386281be9847cd9454b6d8795f76a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RimLightSampler:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RimMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecTex:
+        m_Texture: {fileID: 2800000, guid: fb254775819c9984b9be66d44452477c, type: 3}
+        m_Scale: {x: 4.12, y: 2.07}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Border: 0.0047
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DstBlend: 10
-    - _Emission: 0
+    - _DstBlend: 0
+    - _Emission: 2
     - _Emissive: 0
-    - _EnvironmentLight: 1.5
+    - _EnvironmentLight: 2
     - _GlossMapScale: 1
-    - _Glossiness: 0.412
+    - _Glossiness: 0.769
     - _GlossyReflections: 1
     - _IndexOfRefraction: 2.14
+    - _InvFade: 3
     - _Metallic: 1
-    - _Mode: 3
+    - _Mode: 0
     - _OcclusionStrength: 1
+    - _OutlineFront: 1
     - _Parallax: 0.02
-    - _ReflectionStrength: 1.75
+    - _ReflectionStrength: 0
+    - _RimBias: 0.5
+    - _RimPower: 3
     - _SmoothnessTextureChannel: 0
+    - _SpecularEnable: 0
     - _SpecularHighlights: 1
+    - _SpecularPower: 0.926
     - _SrcBlend: 1
     - _UVSec: 0
-    - _ZWrite: 0
+    - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.5521537, g: 0.7963884, b: 0.8301887, a: 0.5803922}
-    - _EmissionColor: {r: 0.39641356, g: 0.67570496, b: 1.0090526, a: 1}
+    - _BorderColor: {r: 0.19437523, g: 0.37216726, b: 0.4528302, a: 1}
+    - _Color: {r: 0, g: 0.8477473, b: 1, a: 0.95686275}
+    - _EmissionColor: {r: 0.2834639, g: 0.6059842, b: 0.6603774, a: 0}
+    - _EmissiveColor: {r: 0.14415039, g: 0.31307662, b: 0.3851518, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowColor: {r: 0, g: 0.5488077, b: 0.9811321, a: 1}
+    - _TintColor: {r: 0, g: 0.49468464, b: 1, a: 1}
   m_BuildTextureStacks: []
 --- !u!1002 &2100001
 EditorExtensionImpl:
