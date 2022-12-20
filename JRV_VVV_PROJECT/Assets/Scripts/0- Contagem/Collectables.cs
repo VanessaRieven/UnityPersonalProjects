@@ -11,7 +11,8 @@ public class Collectables : MonoBehaviour
     public Color player1Color = new Color(1.7f, 1.5f, 0.75f, 1f);
     public Color player2Color = new Color(0f, 0f, 0f, 1f);
     public GameObject[] floorBoxs;
-    
+    public bool timeTrigger1 = false;  
+    public bool timeTrigger2 = false;  
 
     private void Start()
     {
@@ -67,12 +68,14 @@ public class Collectables : MonoBehaviour
                 Destroy(other.gameObject);
                 anim.speed = newAnimationSpeed;
                 Debug.Log("Player 1 apanhou SPEED (10sec).");
+                timeTrigger1 = true;
             }
             if(tag == "Player2")
             {
                 Destroy(other.gameObject);
                 anim.speed = newAnimationSpeed;
                 Debug.Log("Player 2 apanhou SPEED (10sec).");
+                timeTrigger2 = true; 
             }
             
         }

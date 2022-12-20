@@ -1339,7 +1339,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeLeft: 120
+  TimeLeft2: 0
   TimerOn: 1
+  myObjects:
+  - {fileID: 1251134772}
+  - {fileID: 536397219}
   TimerTxt: {fileID: 173416562}
 --- !u!114 &173416562
 MonoBehaviour:
@@ -3096,6 +3100,8 @@ MonoBehaviour:
   player1Color: {r: 1.7, g: 1.5, b: 0.75, a: 1}
   player2Color: {r: 0, g: 0, b: 0, a: 1}
   floorBoxs: []
+  timeTrigger1: 0
+  timeTrigger2: 0
 --- !u!95 &357751568
 Animator:
   serializedVersion: 4
@@ -3796,6 +3802,8 @@ MonoBehaviour:
   player1Color: {r: 1.7, g: 1.5, b: 0.75, a: 1}
   player2Color: {r: 0.649, g: 0.757, b: 0.663, a: 1}
   floorBoxs: []
+  timeTrigger1: 0
+  timeTrigger2: 0
 --- !u!1 &433957671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5767,6 +5775,8 @@ MonoBehaviour:
   player1Color: {r: 1.7, g: 1.5, b: 0.75, a: 1}
   player2Color: {r: 0.649, g: 0.757, b: 0.663, a: 1}
   floorBoxs: []
+  timeTrigger1: 0
+  timeTrigger2: 0
 --- !u!1 &695125279
 GameObject:
   m_ObjectHideFlags: 0
@@ -10858,7 +10868,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 202410836}
-  - {fileID: 1991789533}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13446,67 +13455,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1215073841}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1991789531
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1991789533}
-  - component: {fileID: 1991789532}
-  - component: {fileID: 1991789534}
-  m_Layer: 0
-  m_Name: Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1991789532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991789531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d8790df74543224eb5662228fc02094, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myObjects:
-  - {fileID: 1251134772}
-  - {fileID: 536397219}
---- !u!4 &1991789533
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991789531}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2128568, y: 0.33479893, z: -10.301245}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1326973833}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1991789534
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991789531}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2051051704
 GameObject:
   m_ObjectHideFlags: 0
@@ -13787,6 +13735,8 @@ MonoBehaviour:
   player1Color: {r: 1.7, g: 1.5, b: 0.75, a: 1}
   player2Color: {r: 0.649, g: 0.757, b: 0.663, a: 1}
   floorBoxs: []
+  timeTrigger1: 0
+  timeTrigger2: 0
 --- !u!114 &2056668919
 MonoBehaviour:
   m_ObjectHideFlags: 0
