@@ -33,7 +33,7 @@ public class Countdown : MonoBehaviour
                     }
                     if ((secondsLeft - 10) >= TimeLeft && collectables.anim.speed == 2f) {
                         collectables.anim.speed = 1f;
-                        Debug.Log("Acabou ---------->");
+                        Debug.Log("Acabou SPEED player 1.");
                     }
                 }
             }

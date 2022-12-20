@@ -10,7 +10,6 @@ public class PlayerMovement2 : MonoBehaviour
     Vector3 RightTurn = new Vector3(0,90f,0);
     Vector3 UpTurn = new Vector3(0,0,0);
     ColectColor colectColorScript;
-    
 
     public Rigidbody rb;
     public float m_Speed = 10.0f;
@@ -22,19 +21,18 @@ public class PlayerMovement2 : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             if (transform.position.x > -5)
             {
-                Input.GetKey(KeyCode.LeftArrow);
-                Debug.Log("Entrou 2");
                 transform.eulerAngles = LeftTurn;
                 Anim.Play("Jump");
             }
         }
+        
         if (transform.position.x < 1)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (Input.GetKey(KeyCode.RightArrow))
             {
                 transform.eulerAngles = RightTurn;
                 Anim.Play("Jump");
@@ -43,7 +41,7 @@ public class PlayerMovement2 : MonoBehaviour
         
         if (transform.position.z < 1)
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (Input.GetKey(KeyCode.UpArrow))
             {
                 transform.eulerAngles = UpTurn;
                 Anim.Play("Jump");
@@ -51,7 +49,7 @@ public class PlayerMovement2 : MonoBehaviour
         }
         if (transform.position.z > -4)
         {
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (Input.GetKey(KeyCode.DownArrow))
             {
                 transform.eulerAngles = DownTurn;
                 Anim.Play("Jump");

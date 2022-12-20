@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (transform.position.x > -4)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKey(KeyCode.A))
             {
                 transform.eulerAngles = LeftTurn;
                 Anim.Play("Jump");
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (transform.position.x < 1)
         {
-            if (Input.GetKeyDown(KeyCode.D))
+            if (Input.GetKey(KeyCode.D))
             {
                 transform.eulerAngles = RightTurn;
                 Anim.Play("Jump");
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (transform.position.z < 1)
         {
-            if (Input.GetKeyDown(KeyCode.W))
+            if (Input.GetKey(KeyCode.W))
             {
                 transform.eulerAngles = UpTurn;
                 Anim.Play("Jump");
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (transform.position.z > -4)
         {
-            if (Input.GetKeyDown(KeyCode.S))
+            if (Input.GetKey(KeyCode.S))
             {
                 transform.eulerAngles = DownTurn;
                 Anim.Play("Jump");
