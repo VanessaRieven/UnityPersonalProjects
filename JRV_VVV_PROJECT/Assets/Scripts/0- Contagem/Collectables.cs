@@ -29,7 +29,7 @@ public class Collectables : MonoBehaviour
                 //pointBoardScript.points += 300;
                 pointBoardScript.p1_pointsText.text = pointBoardScript.p1_Points.ToString();
                 Destroy(other.gameObject);
-                Debug.Log("Player 1 ganhou " + pointBoardScript.p1_Points + " pontos.");
+                Debug.Log("Player 1 tem " + pointBoardScript.p1_Points + " pontos.");
 
                 floorBoxs = GameObject.FindGameObjectsWithTag("Floor");
 
@@ -47,7 +47,7 @@ public class Collectables : MonoBehaviour
                 //pointBoardScript.points += 300;
                 pointBoardScript.p2_pointsText.text = pointBoardScript.p2_Points.ToString();
                 Destroy(other.gameObject);
-                Debug.Log("Player 2 ganhou " + pointBoardScript.p2_Points + " pontos.");
+                Debug.Log("Player 2 tem " + pointBoardScript.p2_Points + " pontos.");
 
                 floorBoxs = GameObject.FindGameObjectsWithTag("Floor");
 

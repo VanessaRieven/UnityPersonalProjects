@@ -13,49 +13,54 @@ public class PlayerMovement2 : MonoBehaviour
 
     public Rigidbody rb;
     public float m_Speed = 10.0f;
+    //countdown true and Go!
+    public Countdown CountdownScript;
 
     private void Start()
     {
         colectColorScript = GameObject.FindGameObjectWithTag("Floor").GetComponent<ColectColor>(); //vai buscar o collectColor script a pasta
+        CountdownScript.TimerOn = false;
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (CountdownScript.TimerOn)
         {
-            if (transform.position.x > -5)
+            if (Input.GetKey(KeyCode.LeftArrow))
             {
-                transform.eulerAngles = LeftTurn;
-                Anim.Play("Jump");
+                if (transform.position.x > -4.5)
+                {
+                    transform.eulerAngles = LeftTurn;
+                    Anim.Play("Jump");
+                }
+            }
+            
+            if (transform.position.x < 0.5)
+            {
+                if (Input.GetKey(KeyCode.RightArrow))
+                {
+                    transform.eulerAngles = RightTurn;
+                    Anim.Play("Jump");
+                }
+            }
+            
+            if (transform.position.z < 1)
+            {
+                if (Input.GetKey(KeyCode.UpArrow))
+                {
+                    transform.eulerAngles = UpTurn;
+                    Anim.Play("Jump");
+                }
+            }
+            if (transform.position.z > -4)
+            {
+                if (Input.GetKey(KeyCode.DownArrow))
+                {
+                    transform.eulerAngles = DownTurn;
+                    Anim.Play("Jump");
+                }
             }
         }
-        
-        if (transform.position.x < 1)
-        {
-            if (Input.GetKey(KeyCode.RightArrow))
-            {
-                transform.eulerAngles = RightTurn;
-                Anim.Play("Jump");
-            }
-        }
-        
-        if (transform.position.z < 1)
-        {
-            if (Input.GetKey(KeyCode.UpArrow))
-            {
-                transform.eulerAngles = UpTurn;
-                Anim.Play("Jump");
-            }
-        }
-        if (transform.position.z > -4)
-        {
-            if (Input.GetKey(KeyCode.DownArrow))
-            {
-                transform.eulerAngles = DownTurn;
-                Anim.Play("Jump");
-            }
-        }
-        
     }
 
     public void Move(){

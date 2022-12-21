@@ -15,12 +15,33 @@ public class Countdown : MonoBehaviour
     public GameObject[] myObjects;
 
     public Text TimerTxt;
+
+    //Countdown and GO!
+    public Text countdownTextField;
+    public AudioSource audioSource;
    
     void Start()
     {
-        TimerOn = true; //Arranca timer com o jogo
+        TimerOn = false; //Arranca timer com o jogo
         collectables = GameObject.Find("Player").GetComponent<Collectables>();
         collectables2 = GameObject.Find("Player 2").GetComponent<Collectables>();
+        StartCoroutine(CountdownCoroutine());
+    }
+
+    IEnumerator CountdownCoroutine() {
+        countdownTextField.text = "3";
+        audioSource.Play();
+        yield return new WaitForSeconds(1.0f);
+        countdownTextField.text = "2";
+        yield return new WaitForSeconds(1.0f);
+        countdownTextField.text = "1";
+        yield return new WaitForSeconds(1.0f);
+        countdownTextField.text = "Go!";
+        // Começa o jogo:
+        TimerOn = true;
+        yield return new WaitForSeconds(1.0f);
+        countdownTextField.text = "";
+        yield return null;
     }
 
     void Update()
@@ -63,7 +84,7 @@ public class Countdown : MonoBehaviour
                     Vector3 randomSpawnPosition = new Vector3((int)Random.Range(-6f, 2f), 1, (int)Random.Range(-6f, 2f)+0.5f);
 
                     Instantiate(myObjects[randomIndex], randomSpawnPosition, Quaternion.identity);
-                    TimeLeft2 = TimeLeft; // Step 3 - Igualar o tempo 1.50
+                    TimeLeft2 = TimeLeft; // Step 3 - Igualar o tempo 1.55
                 }
                 if (TimeLeft2 == 0)
                 {
