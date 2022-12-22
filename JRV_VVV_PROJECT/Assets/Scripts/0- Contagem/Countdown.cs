@@ -20,12 +20,16 @@ public class Countdown : MonoBehaviour
     public Text countdownTextField;
     public AudioSource audioSource;
    
+    //Final Results
+    public GameObject FinalResult;
+
     void Start()
     {
         TimerOn = false; //Arranca timer com o jogo
         collectables = GameObject.Find("Player").GetComponent<Collectables>();
         collectables2 = GameObject.Find("Player 2").GetComponent<Collectables>();
         StartCoroutine(CountdownCoroutine());
+        FinalResult.SetActive(false);
     }
 
     IEnumerator CountdownCoroutine() {
@@ -96,6 +100,7 @@ public class Countdown : MonoBehaviour
                 Debug.Log("Time is UP!");
                 TimeLeft = 0; //quando chegar a 0, ele entra aqui inves do if, passa o timerOn a falso e termina
                 TimerOn = false;
+                FinalResult.SetActive(true);
             }
         }
     }

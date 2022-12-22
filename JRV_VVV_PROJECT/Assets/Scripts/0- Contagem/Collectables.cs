@@ -6,6 +6,7 @@ using TMPro;
 public class Collectables : MonoBehaviour
 {
     PointBoard pointBoardScript;
+    //PointBoard pointBoardScript2;
     public Animator anim;
     public float newAnimationSpeed = 2f;
     public Color player1Color = new Color(1.7f, 1.5f, 0.75f, 1f);
@@ -17,6 +18,7 @@ public class Collectables : MonoBehaviour
     private void Start()
     {
         pointBoardScript = GameObject.Find("Texto Pontuação").GetComponent<PointBoard>(); //vai buscar o script pointBoard a pasta
+        //pointBoardScript2 = GameObject.Find("Final Results").GetComponent<PointBoard>();
         anim = GetComponent<Animator>();
     }
 
@@ -26,8 +28,8 @@ public class Collectables : MonoBehaviour
         if(other.tag == "Collectable"){
             if(tag == "Player")
             {
-                //pointBoardScript.points += 300;
                 pointBoardScript.p1_pointsText.text = pointBoardScript.p1_Points.ToString();
+                //pointBoardScript2.p1_pointsText.text = pointBoardScript.p1_Points.ToString();
                 Destroy(other.gameObject);
                 Debug.Log("Player 1 tem " + pointBoardScript.p1_Points + " pontos.");
 
@@ -44,8 +46,8 @@ public class Collectables : MonoBehaviour
             
             if(tag == "Player2")
             {
-                //pointBoardScript.points += 300;
                 pointBoardScript.p2_pointsText.text = pointBoardScript.p2_Points.ToString();
+                //pointBoardScript2.p1_pointsText.text = pointBoardScript.p1_Points.ToString();
                 Destroy(other.gameObject);
                 Debug.Log("Player 2 tem " + pointBoardScript.p2_Points + " pontos.");
 
@@ -62,7 +64,6 @@ public class Collectables : MonoBehaviour
         }
         if(other.tag == "Collectable2"){
             //pointBoardScript.points += 300;
-
             if(tag == "Player")
             {
                 Destroy(other.gameObject);

@@ -10,4 +10,5 @@ public class PointBoard : MonoBehaviour
     public TextMeshProUGUI p2_pointsText;
     public float p1_Points = 0;
     public float p2_Points = 0;
+    
 }
