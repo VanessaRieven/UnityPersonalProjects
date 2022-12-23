@@ -9,6 +9,8 @@ TagManager:
   - Collectable
   - Floor
   - Collectable2
+  - Player1Resultado
+  - Player2Resultado
   layers:
   - Default
   - TransparentFX
