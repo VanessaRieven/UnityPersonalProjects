@@ -22,6 +22,7 @@ public class CharacterSelection : MonoBehaviour
         {
             selectedCharacter += characters.Length;
         }
+        characters[selectedCharacter].SetActive(true);
     }
 
     public void StartGame()
