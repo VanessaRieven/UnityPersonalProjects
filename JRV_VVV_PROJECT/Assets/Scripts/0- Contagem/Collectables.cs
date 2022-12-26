@@ -10,7 +10,7 @@ public class Collectables : MonoBehaviour
     public Animator anim;
     public float newAnimationSpeed = 2f;
     public Color player1Color = new Color(1.7f, 1.5f, 0.75f, 1f);
-    public Color player2Color = new Color(0f, 0f, 0f, 1f);
+    public Color player2Color = new Color(0f, 1f, 1f, 1f);
     public GameObject[] floorBoxs;
     public bool timeTrigger1 = false;  
     public bool timeTrigger2 = false;  
@@ -25,6 +25,7 @@ public class Collectables : MonoBehaviour
 //script soma 300 pontos ao colidir com o Collectable (diamond)
     private void OnTriggerEnter(Collider other)
     {
+        
         if(other.tag == "Collectable"){
             if(tag == "Player")
             {
@@ -34,10 +35,10 @@ public class Collectables : MonoBehaviour
                 Debug.Log("Player 1 tem " + pointBoardScript.p1_Points + " pontos.");
 
                 floorBoxs = GameObject.FindGameObjectsWithTag("Floor");
-
+                
                 foreach (GameObject floorBox in floorBoxs)
                 {
-                    if (floorBox. GetComponent<Renderer>().material.color == player1Color) {
+                    if (floorBox.GetComponent<Renderer>().material.color == player1Color) {
                         floorBox.GetComponent<Renderer>().material.color = Color.white;
                     }
                 }

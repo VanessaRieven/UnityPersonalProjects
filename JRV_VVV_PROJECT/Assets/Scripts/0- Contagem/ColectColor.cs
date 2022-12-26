@@ -15,7 +15,7 @@ public class ColectColor : MonoBehaviour
     public bool p2Entered = false;
     public GameObject box;
     public Color player1Color = new Color(1.7f, 1.5f, 0.75f, 1f);
-    public Color player2Color = new Color(0f, 0f, 0f, 1f);
+    public Color player2Color = new Color(0f, 1f, 1f, 1f);
     public ParticleSystem particles;
 
     //Vai buscar as cores do player, cada vez q o player colidir com a caixa, valida se ja tinha entrado ou nao e altera a cor. 
