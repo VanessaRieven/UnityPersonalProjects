@@ -2,13 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class LoadCharacter : MonoBehaviour
 {
     public GameObject[] characterPrefabs;
     public Transform spawnPoint;
-    public TMP_Text label;
+    //public TMP_Text label;
 
+    //Sprites:
+    public Image Player2Head;
+    public Sprite BunnySprite;
+    public Sprite ChubbySprite;
+    public Sprite ClovySprite;
+    public Sprite HelmySprite;
+    public Sprite KingySprite;
+    public Sprite LeafySprite;
+    public Sprite MewmewSprite;
+    public Sprite RockySprite;
+    public Sprite VickySprite;
 
     void Start()
     {
@@ -22,9 +34,6 @@ public class LoadCharacter : MonoBehaviour
         GameObject child7 = GameObject.Find("Mewmew");
         GameObject child8 = GameObject.Find("Rocky");
         GameObject child9 = GameObject.Find("Vicky");
-        //Debug.Log(child1);
-        //Debug.Log(child2);
-
         //Acessórios:
         GameObject KingyCrown = GameObject.Find("KingyCrown");
         GameObject HelmyMetal = GameObject.Find("HelmyMetal");
@@ -51,6 +60,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = false;
             LeafyLeaf.GetComponent<Renderer>().enabled = false;
             ChubbyCrown.GetComponent<Renderer>().enabled = false;
+            //Sprite:
+            Player2Head.sprite = BunnySprite;
         }
         else if (selectedCharacter == 1)
         {
@@ -70,6 +81,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = false;
             LeafyLeaf.GetComponent<Renderer>().enabled = false;
             ChubbyCrown.GetComponent<Renderer>().enabled = true;
+            //Sprite:
+            Player2Head.sprite = ChubbySprite;
         }
         else if (selectedCharacter == 2)
         {
@@ -89,6 +102,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = true;
             LeafyLeaf.GetComponent<Renderer>().enabled = false;
             ChubbyCrown.GetComponent<Renderer>().enabled = false;
+            //Sprite:
+            Player2Head.sprite = ClovySprite;
         }
         else if (selectedCharacter == 3)
         {
@@ -108,6 +123,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = false;
             LeafyLeaf.GetComponent<Renderer>().enabled = false;
             ChubbyCrown.GetComponent<Renderer>().enabled = false;
+            //Sprite:
+            Player2Head.sprite = HelmySprite;
         }
         else if (selectedCharacter == 4)
         {
@@ -127,6 +144,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = false;
             LeafyLeaf.GetComponent<Renderer>().enabled = false;
             ChubbyCrown.GetComponent<Renderer>().enabled = false;
+            //Sprite:
+            Player2Head.sprite = KingySprite;
         }
         else if (selectedCharacter == 5)
         {
@@ -146,6 +165,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = false;
             LeafyLeaf.GetComponent<Renderer>().enabled = true;
             ChubbyCrown.GetComponent<Renderer>().enabled = false;
+            //Sprite:
+            Player2Head.sprite = LeafySprite;
         }
         else if (selectedCharacter == 6)
         {
@@ -165,6 +186,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = false;
             LeafyLeaf.GetComponent<Renderer>().enabled = false;
             ChubbyCrown.GetComponent<Renderer>().enabled = false;
+            //Sprite:
+            Player2Head.sprite = MewmewSprite;
         }
         else if (selectedCharacter == 7)
         {
@@ -184,6 +207,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = false;
             LeafyLeaf.GetComponent<Renderer>().enabled = false;
             ChubbyCrown.GetComponent<Renderer>().enabled = false;
+            //Sprite:
+            Player2Head.sprite = RockySprite;
         }
         else if (selectedCharacter == 8)
         {
@@ -203,6 +228,8 @@ public class LoadCharacter : MonoBehaviour
             ClovySprout.GetComponent<Renderer>().enabled = false;
             LeafyLeaf.GetComponent<Renderer>().enabled = false;
             ChubbyCrown.GetComponent<Renderer>().enabled = false;
+            //Sprite:
+            Player2Head.sprite = VickySprite;
         }
 
         //GameObject prefab = characterPrefabs[selectedCharacter];

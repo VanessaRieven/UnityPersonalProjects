@@ -40,7 +40,7 @@ public class Countdown : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         countdownTextField.text = "1";
         yield return new WaitForSeconds(1.0f);
-        countdownTextField.text = "Go!";
+        countdownTextField.text = "GO";
         // Começa o jogo:
         TimerOn = true;
         yield return new WaitForSeconds(1.0f);

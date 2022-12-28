@@ -22,7 +22,7 @@ public class Collectables : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
-//script soma 300 pontos ao colidir com o Collectable (diamond)
+    //script soma 300 pontos ao colidir com o Collectable (diamond)
     private void OnTriggerEnter(Collider other)
     {
         

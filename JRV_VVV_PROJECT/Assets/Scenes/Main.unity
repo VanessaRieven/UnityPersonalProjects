@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.40440086, g: 0.2276755, b: 0.096609086, a: 1}
+  m_IndirectSpecularColor: {r: 0.40430787, g: 0.22760154, b: 0.09630496, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1900,7 +1900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &179368631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3802,7 +3802,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterPrefabs: []
   spawnPoint: {fileID: 357751563}
-  label: {fileID: 0}
+  Player2Head: {fileID: 1333440868}
+  BunnySprite: {fileID: 21300000, guid: bd0817c1ecc836f4e809e5701b089972, type: 3}
+  ChubbySprite: {fileID: 21300000, guid: de1dc15f635bb7a4c82b242ff37e5d06, type: 3}
+  ClovySprite: {fileID: 21300000, guid: 6811a389e9abb1d4f8911a25e85c151a, type: 3}
+  HelmySprite: {fileID: 21300000, guid: 35209403174496e448972b930d3419ab, type: 3}
+  KingySprite: {fileID: 21300000, guid: ca5c74ada45cc8c4dbdbcbd7eafa2622, type: 3}
+  LeafySprite: {fileID: 21300000, guid: 9bdf2d22cd4107342a75753eb0c519fc, type: 3}
+  MewmewSprite: {fileID: 21300000, guid: 8f706c2ad08195b4884f9af510183c8f, type: 3}
+  RockySprite: {fileID: 21300000, guid: b8f8e4c31486a3f46bb2c8cd77705e24, type: 3}
+  VickySprite: {fileID: 21300000, guid: 799e75a0d491131469713b79ba968950, type: 3}
 --- !u!1 &363018638
 GameObject:
   m_ObjectHideFlags: 0
@@ -6319,7 +6328,16 @@ MonoBehaviour:
   - {fileID: 720065719603421712, guid: 994a1bc47958fbb4aa946492d6147b9c, type: 3}
   - {fileID: 6841911357444188000, guid: 7d734cb2a8af8844d9a02da36d5e99e1, type: 3}
   spawnPoint: {fileID: 159733404}
-  label: {fileID: 0}
+  Player2Head: {fileID: 0}
+  BunnySprite: {fileID: 0}
+  ChubbySprite: {fileID: 0}
+  ClovySprite: {fileID: 0}
+  HelmySprite: {fileID: 0}
+  KingySprite: {fileID: 0}
+  LeafySprite: {fileID: 0}
+  MewmewSprite: {fileID: 0}
+  RockySprite: {fileID: 0}
+  VickySprite: {fileID: 0}
 --- !u!4 &663461685
 Transform:
   m_ObjectHideFlags: 0
@@ -7620,6 +7638,7 @@ GameObject:
   - component: {fileID: 759264319}
   - component: {fileID: 759264318}
   - component: {fileID: 759264317}
+  - component: {fileID: 759264320}
   m_Layer: 5
   m_Name: PlayerHead
   m_TagString: Untagged
@@ -7634,14 +7653,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759264315}
-  m_LocalRotation: {x: -0.2812529, y: 0.95963377, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.2812529, w: 0.95963377}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1069130164}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -32.67}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 32.67}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -12.5, y: 12.5}
@@ -7682,7 +7701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fc79a1380e3594887b7826f4f8a7118e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd0817c1ecc836f4e809e5701b089972, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7700,6 +7719,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 759264315}
   m_CullTransparentMesh: 1
+--- !u!114 &759264320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759264315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297f390c2e6911946bb6b065d972c092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefabs: []
+  spawnPoint: {fileID: 0}
+  Player2Head: {fileID: 759264318}
+  BunnySprite: {fileID: 21300000, guid: bd0817c1ecc836f4e809e5701b089972, type: 3}
+  ChubbySprite: {fileID: 21300000, guid: de1dc15f635bb7a4c82b242ff37e5d06, type: 3}
+  ClovySprite: {fileID: 21300000, guid: 6811a389e9abb1d4f8911a25e85c151a, type: 3}
+  HelmySprite: {fileID: 21300000, guid: 35209403174496e448972b930d3419ab, type: 3}
+  KingySprite: {fileID: 21300000, guid: ca5c74ada45cc8c4dbdbcbd7eafa2622, type: 3}
+  LeafySprite: {fileID: 21300000, guid: 9bdf2d22cd4107342a75753eb0c519fc, type: 3}
+  MewmewSprite: {fileID: 21300000, guid: 8f706c2ad08195b4884f9af510183c8f, type: 3}
+  RockySprite: {fileID: 21300000, guid: b8f8e4c31486a3f46bb2c8cd77705e24, type: 3}
+  VickySprite: {fileID: 21300000, guid: 799e75a0d491131469713b79ba968950, type: 3}
 --- !u!1 &761124984
 GameObject:
   m_ObjectHideFlags: 0
@@ -12579,6 +12622,7 @@ GameObject:
   - component: {fileID: 1291125092}
   - component: {fileID: 1291125091}
   - component: {fileID: 1291125090}
+  - component: {fileID: 1291125093}
   m_Layer: 5
   m_Name: PlayerHead
   m_TagString: Untagged
@@ -12659,6 +12703,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1291125088}
   m_CullTransparentMesh: 1
+--- !u!114 &1291125093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291125088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ec07fcc4f0c51a42a742a34992e95a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1315958767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13083,7 +13139,7 @@ GameObject:
   - component: {fileID: 1333440868}
   - component: {fileID: 1333440867}
   m_Layer: 5
-  m_Name: PlayerHead
+  m_Name: Player2Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13096,17 +13152,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333440865}
-  m_LocalRotation: {x: -0, y: -0, z: 0.2812529, w: 0.95963377}
+  m_LocalRotation: {x: -0.2812529, y: 0.95963377, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: -1.3, y: 1.3, z: 1.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1036778875}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -62.10266, y: -57.71414}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -32.67}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.83, y: 11.75}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1333440867
@@ -13144,7 +13200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fc79a1380e3594887b7826f4f8a7118e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd0817c1ecc836f4e809e5701b089972, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16166,6 +16222,7 @@ GameObject:
   - component: {fileID: 1893973465}
   - component: {fileID: 1893973464}
   - component: {fileID: 1893973463}
+  - component: {fileID: 1893973466}
   m_Layer: 5
   m_Name: PlayerHead
   m_TagString: Untagged
@@ -16180,14 +16237,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893973461}
-  m_LocalRotation: {x: -0.2812529, y: 0.95963377, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.2812529, w: 0.95963377}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1745887269}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -32.67}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 32.67}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -12.5, y: 12.5}
@@ -16228,7 +16285,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fc79a1380e3594887b7826f4f8a7118e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bd0817c1ecc836f4e809e5701b089972, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16246,6 +16303,30 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893973461}
   m_CullTransparentMesh: 1
+--- !u!114 &1893973466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893973461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 297f390c2e6911946bb6b065d972c092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterPrefabs: []
+  spawnPoint: {fileID: 0}
+  Player2Head: {fileID: 1893973464}
+  BunnySprite: {fileID: 21300000, guid: bd0817c1ecc836f4e809e5701b089972, type: 3}
+  ChubbySprite: {fileID: 21300000, guid: de1dc15f635bb7a4c82b242ff37e5d06, type: 3}
+  ClovySprite: {fileID: 21300000, guid: 6811a389e9abb1d4f8911a25e85c151a, type: 3}
+  HelmySprite: {fileID: 21300000, guid: 35209403174496e448972b930d3419ab, type: 3}
+  KingySprite: {fileID: 21300000, guid: ca5c74ada45cc8c4dbdbcbd7eafa2622, type: 3}
+  LeafySprite: {fileID: 21300000, guid: 9bdf2d22cd4107342a75753eb0c519fc, type: 3}
+  MewmewSprite: {fileID: 21300000, guid: 8f706c2ad08195b4884f9af510183c8f, type: 3}
+  RockySprite: {fileID: 21300000, guid: b8f8e4c31486a3f46bb2c8cd77705e24, type: 3}
+  VickySprite: {fileID: 21300000, guid: 799e75a0d491131469713b79ba968950, type: 3}
 --- !u!1 &1898039026
 GameObject:
   m_ObjectHideFlags: 0
