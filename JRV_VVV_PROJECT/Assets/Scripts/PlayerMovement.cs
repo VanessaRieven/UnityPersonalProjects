@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if(CountdownScript.TimerOn)
+        if(CountdownScript != null && CountdownScript.TimerOn)
         {
             if (transform.position.x > -4)
             {
