@@ -11,6 +11,8 @@ TagManager:
   - Collectable2
   - Player1Resultado
   - Player2Resultado
+  - Water
+  - Countdown
   layers:
   - Default
   - TransparentFX
