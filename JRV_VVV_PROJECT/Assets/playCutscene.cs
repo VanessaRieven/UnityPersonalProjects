@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Video;
+using UnityEngine.SceneManagement;
+
+public class playCutscene : MonoBehaviour
+{
+    public VideoPlayer cutscene;
+    public GameObject background;
+    public Transition transitionScript;
+
+    private void Start()
+    {
+        cutscene.loopPointReached += CheckOver;
+    }
+
+    public void PlayCutscene(){
+        background.SetActive(true);
+        cutscene.Play();
+    }
+
+    void CheckOver(UnityEngine.Video.VideoPlayer vp)
+    {
+        LoadNextScene();
+    }
+
+    public void LoadNextScene()
+    {
+        transitionScript.LoadNextScene();
+    }
+}
