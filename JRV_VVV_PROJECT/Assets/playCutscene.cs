@@ -9,6 +9,7 @@ public class playCutscene : MonoBehaviour
     public VideoPlayer cutscene;
     public GameObject background;
     public Transition transitionScript;
+    public GameObject SpaceText;
 
     private void Start()
     {
@@ -18,6 +19,7 @@ public class playCutscene : MonoBehaviour
     public void PlayCutscene(){
         background.SetActive(true);
         cutscene.Play();
+        SpaceText.SetActive(true);
     }
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
