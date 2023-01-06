@@ -6,16 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Transition : MonoBehaviour
 {
-    public Image fadeImage;
-    public Animator anim;
-    public Scene scene;
-    int nextLevelBuildIndex;
-
 
     public void LoadNextScene()
     {
-/*         scene = SceneManager.GetActiveScene();
-        nextLevelBuildIndex = 1 - scene.buildIndex; */
-        // SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

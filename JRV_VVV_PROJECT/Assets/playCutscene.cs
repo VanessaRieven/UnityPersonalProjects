@@ -22,10 +22,10 @@ public class playCutscene : MonoBehaviour
 
     void CheckOver(UnityEngine.Video.VideoPlayer vp)
     {
-        LoadNextScene();
+        transitionScript.LoadNextScene();
     }
 
-    public void LoadNextScene()
+    public void LoadingNextScene()
     {
         transitionScript.LoadNextScene();
     }

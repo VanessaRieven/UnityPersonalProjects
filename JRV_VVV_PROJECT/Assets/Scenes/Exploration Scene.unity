@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: e888bdf6b22fcc242a525c402432772f, type: 2}
@@ -20267,7 +20267,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 360b341bddeff4756b36f7b040868dd1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 25263c09c442b4beda71d6b0e955a901, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -24751,8 +24751,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d1a38c32db6e4af39b546efc85a6ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeImage: {fileID: 0}
-  anim: {fileID: 0}
 --- !u!1001 &1935955008
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25860,6 +25858,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_BounceIntensity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635818395109264422, guid: 3eb61ccfde7404de0af486d97abb66bd,
+        type: 3}
+      propertyPath: m_Shadows.m_Strength
+      value: 0.353
       objectReference: {fileID: 0}
     - target: {fileID: 5635818395109264423, guid: 3eb61ccfde7404de0af486d97abb66bd,
         type: 3}
